@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zurab Khadikov, Senior Software Architect in Freiburg, Germany.">
+  <meta name="description" content="Zurab Khadikov is a Senior Software Architect specializing in Industrial IoT, cloud platforms, software architecture, and business intelligence.">
   <title>Zurab Khadikov - Senior Software Architect</title>
   <style>
     :root { --bg:#f4f1ea; --text:#17201c; --muted:#65706a; --accent:#b94b2f; --line:#d7d2c7; }
@@ -27,9 +27,14 @@
     .links { display:flex; flex-wrap:wrap; gap:.75rem 1.5rem; margin-top:2rem; }
     section { padding-top:clamp(5rem,12vw,9rem); }
     h2 { margin:0 0 2rem; }
+    .about { max-width:55rem; font-size:clamp(1rem,2vw,1.15rem); }
+    .about p { margin:0 0 1.25rem; }
     .project { display:grid; grid-template-columns:minmax(8rem,.4fr) minmax(0,1fr) auto; gap:1.5rem; align-items:baseline; padding-block:1.5rem; border-block:1px solid var(--line); }
     .project h3,.project p { margin:0; }
-    .project p,footer { color:var(--muted); }
+    .project p,.publication p,footer { color:var(--muted); }
+    .publication { max-width:55rem; padding-block:1.25rem; border-block-start:1px solid var(--line); }
+    .publication:last-child { border-block-end:1px solid var(--line); }
+    .publication h3,.publication p { margin:0; }
     footer { padding-block:2rem; font-size:.85rem; }
     @media (max-width:42rem) {
       nav { align-items:flex-start; padding-block:1.25rem; }
@@ -48,9 +53,9 @@
     <nav aria-label="Primary navigation">
       <a href="#top" aria-label="Zurab Khadikov, home">ZK/</a>
       <ul>
+        <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="https://github.com/zkhadikov">GitHub</a></li>
-        <li><a href="https://netilion.endress.com">Netilion</a></li>
       </ul>
     </nav>
     <main id="top">
@@ -58,20 +63,60 @@
         <div>
           <div class="eyebrow">Freiburg, Germany</div>
           <h1>Zurab Khadikov</h1>
-          <p class="intro">Senior Software Architect at Endress+Hauser Digital Solutions, building dependable software and digital services for industry.</p>
+          <p class="intro">Senior Software Architect with more than 15 years of experience turning industrial, cloud, and business-intelligence challenges into dependable software platforms.</p>
           <div class="links">
-            <a href="https://github.com/zkhadikov">View GitHub profile</a>
+            <a href="https://www.linkedin.com/in/zkhadikov/">LinkedIn</a>
+            <a href="https://www.xing.com/profile/Zurab_Khadikov">XING</a>
+            <a href="https://github.com/zkhadikov">GitHub</a>
             <a href="https://netilion.endress.com">Explore Netilion</a>
           </div>
         </div>
         <img class="avatar" src="https://avatars.githubusercontent.com/u/34274170?v=4" alt="Portrait of Zurab Khadikov" width="240" height="240">
       </div>
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <div class="about">
+          <p>I design and evolve software architectures for Industrial Internet of Things products at Endress+Hauser Digital Solutions. My work combines technical direction with hands-on delivery across REST APIs, web applications, serverless AWS services, and customer-specific industrial solutions.</p>
+          <p>I care about more than code: mentoring engineers, clarifying architectural decisions, improving development practices, and helping teams deliver sustainable systems. Before focusing on IIoT, I led the development of Jedox Office integrations, established build and release automation, and worked on high-performance analytical database technology.</p>
+          <p>My background spans Ruby on Rails, JavaScript and TypeScript, Angular, React, Java, C#/.NET, C++, AWS, Docker, Jenkins, and Git-based delivery workflows. I hold degrees in Computer Science/Computational Science and Metrology and Quality Management, connecting software engineering with an understanding of industrial systems and processes.</p>
+        </div>
+      </section>
       <section id="work" aria-labelledby="work-heading">
         <h2 id="work-heading">Selected work</h2>
         <article class="project">
-          <h3><a href="https://github.com/zkhadikov/todo_app">todo_app</a></h3>
-          <p>A Ruby application available as open-source work on GitHub.</p>
-          <span>Ruby</span>
+          <h3><a href="https://netilion.endress.com">Netilion</a></h3>
+          <p>Architecture and development of Endress+Hauser's Industrial IoT ecosystem, including REST APIs, web products, serverless cloud services, and tailored customer solutions.</p>
+          <span>IIoT / AWS</span>
+        </article>
+        <article class="project">
+          <h3>Palo / Jedox OLAP</h3>
+          <p>Work on the open-source MOLAP server behind Palo/Jedox, including the integration of a massively parallel GPU accelerator for OLAP calculations. GitHub hosts a <a href="https://github.com/zkhadikov/palo-server">fork of the Palo server</a> and separate <a href="https://github.com/zkhadikov/palo">Dockerfiles for building and deploying it</a>.</p>
+          <span>C++ / CUDA</span>
+        </article>
+        <article class="project">
+          <h3>Engineering leadership</h3>
+          <p>Technical leadership, mentoring, architecture, code review, and delivery-process improvement across IIoT teams and the Jedox Excel and Office Add-ins team.</p>
+          <span>Teams / Architecture</span>
+        </article>
+        <article class="project">
+          <h3>Build and release systems</h3>
+          <p>Designed continuous-integration infrastructure and standardized automated build, packaging, and release workflows using Jenkins, CMake, Docker, and LXC.</p>
+          <span>CI/CD / DevOps</span>
+        </article>
+      </section>
+      <section id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Research &amp; publications</h2>
+        <article class="publication">
+          <h3>Exploring Graphics Processing Units as Parallel Coprocessors for Online Aggregation</h3>
+          <p>Co-author, ACM DOLAP 2010. Research into using GPUs to accelerate analytical database workloads.</p>
+        </article>
+        <article class="publication">
+          <h3>A CUDA-powered In-memory OLAP Server</h3>
+          <p>Co-author, NVIDIA GPU Technology Conference poster, 2009.</p>
+        </article>
+        <article class="publication">
+          <h3>Efficient Top-down Planning in Business Intelligence</h3>
+          <p>Co-author, NVIDIA GPU Technology Conference presentation, 2012.</p>
         </article>
       </section>
     </main>
