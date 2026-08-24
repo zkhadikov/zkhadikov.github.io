@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zurab Khadikov, Senior Software Architect in Freiburg, Germany.">
+  <title>Zurab Khadikov - Senior Software Architect</title>
+  <style>
+    :root { --bg:#f4f1ea; --text:#17201c; --muted:#65706a; --accent:#b94b2f; --line:#d7d2c7; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--text); font:1rem/1.65 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; }
+    a { color:inherit; text-decoration-color:var(--accent); text-underline-offset:.25em; }
+    a:hover,a:focus-visible { color:var(--accent); }
+    a:focus-visible { outline:.2rem solid var(--accent); outline-offset:.25rem; }
+    .page { width:min(100% - 2rem,68rem); margin:auto; }
+    nav,footer { display:flex; align-items:center; justify-content:space-between; gap:1rem; border-block-start:1px solid var(--line); }
+    nav { min-height:5rem; border-block-start:0; border-block-end:1px solid var(--line); }
+    nav a { text-decoration:none; }
+    nav ul { display:flex; gap:1.25rem; margin:0; padding:0; list-style:none; }
+    main { padding-block:clamp(4rem,10vw,8rem); }
+    .hero { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:clamp(2rem,8vw,6rem); align-items:center; }
+    .eyebrow,h2 { color:var(--accent); font-size:.85rem; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { max-width:13ch; margin:.5rem 0 1.25rem; font:400 clamp(3rem,9vw,7rem)/.92 Georgia,serif; letter-spacing:-.06em; }
+    .intro { max-width:42rem; color:var(--muted); font-size:clamp(1rem,2vw,1.2rem); }
+    .avatar { width:clamp(9rem,22vw,15rem); aspect-ratio:1; border:1px solid var(--line); border-radius:50%; filter:grayscale(100%); }
+    .links { display:flex; flex-wrap:wrap; gap:.75rem 1.5rem; margin-top:2rem; }
+    section { padding-top:clamp(5rem,12vw,9rem); }
+    h2 { margin:0 0 2rem; }
+    .project { display:grid; grid-template-columns:minmax(8rem,.4fr) minmax(0,1fr) auto; gap:1.5rem; align-items:baseline; padding-block:1.5rem; border-block:1px solid var(--line); }
+    .project h3,.project p { margin:0; }
+    .project p,footer { color:var(--muted); }
+    footer { padding-block:2rem; font-size:.85rem; }
+    @media (max-width:42rem) {
+      nav { align-items:flex-start; padding-block:1.25rem; }
+      nav ul,footer { flex-direction:column; }
+      nav ul { gap:.25rem; text-align:right; }
+      .hero,.project { grid-template-columns:1fr; }
+      .avatar { grid-row:1; width:7rem; }
+      .project { gap:.35rem; }
+      footer { align-items:flex-start; }
+    }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav aria-label="Primary navigation">
+      <a href="#top" aria-label="Zurab Khadikov, home">ZK/</a>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="https://github.com/zkhadikov">GitHub</a></li>
+        <li><a href="https://netilion.endress.com">Netilion</a></li>
+      </ul>
+    </nav>
+    <main id="top">
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Freiburg, Germany</div>
+          <h1>Zurab Khadikov</h1>
+          <p class="intro">Senior Software Architect at Endress+Hauser Digital Solutions, building dependable software and digital services for industry.</p>
+          <div class="links">
+            <a href="https://github.com/zkhadikov">View GitHub profile</a>
+            <a href="https://netilion.endress.com">Explore Netilion</a>
+          </div>
+        </div>
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/34274170?v=4" alt="Portrait of Zurab Khadikov" width="240" height="240">
+      </div>
+      <section id="work" aria-labelledby="work-heading">
+        <h2 id="work-heading">Selected work</h2>
+        <article class="project">
+          <h3><a href="https://github.com/zkhadikov/todo_app">todo_app</a></h3>
+          <p>A Ruby application available as open-source work on GitHub.</p>
+          <span>Ruby</span>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2026 Zurab Khadikov</span>
+      <span>Built with HTML and CSS. Hosted on GitHub Pages.</span>
+    </footer>
+  </div>
+</body>
+</html>
