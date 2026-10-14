@@ -3,131 +3,1143 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zurab Khadikov is a Senior Software Architect specializing in Industrial IoT, cloud platforms, software architecture, and business intelligence.">
-  <title>Zurab Khadikov - Senior Software Architect</title>
-  <style>
-    :root { --bg:#f4f1ea; --text:#17201c; --muted:#65706a; --accent:#b94b2f; --line:#d7d2c7; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; background:var(--bg); color:var(--text); font:1rem/1.65 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; }
-    a { color:inherit; text-decoration-color:var(--accent); text-underline-offset:.25em; }
-    a:hover,a:focus-visible { color:var(--accent); }
-    a:focus-visible { outline:.2rem solid var(--accent); outline-offset:.25rem; }
-    .page { width:min(100% - 2rem,68rem); margin:auto; }
-    nav,footer { display:flex; align-items:center; justify-content:space-between; gap:1rem; border-block-start:1px solid var(--line); }
-    nav { min-height:5rem; border-block-start:0; border-block-end:1px solid var(--line); }
-    nav a { text-decoration:none; }
-    nav ul { display:flex; gap:1.25rem; margin:0; padding:0; list-style:none; }
-    main { padding-block:clamp(4rem,10vw,8rem); }
-    .hero { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:clamp(2rem,8vw,6rem); align-items:center; }
-    .eyebrow,h2 { color:var(--accent); font-size:.85rem; letter-spacing:.12em; text-transform:uppercase; }
-    h1 { max-width:13ch; margin:.5rem 0 1.25rem; font:400 clamp(3rem,9vw,7rem)/.92 Georgia,serif; letter-spacing:-.06em; }
-    .intro { max-width:42rem; color:var(--muted); font-size:clamp(1rem,2vw,1.2rem); }
-    .avatar { width:clamp(9rem,22vw,15rem); aspect-ratio:1; border:1px solid var(--line); border-radius:50%; filter:grayscale(100%); }
-    .links { display:flex; flex-wrap:wrap; gap:.75rem 1.5rem; margin-top:2rem; }
-    section { padding-top:clamp(5rem,12vw,9rem); }
-    h2 { margin:0 0 2rem; }
-    .about { max-width:55rem; font-size:clamp(1rem,2vw,1.15rem); }
-    .about p { margin:0 0 1.25rem; }
-    .project { display:grid; grid-template-columns:minmax(8rem,.4fr) minmax(0,1fr) auto; gap:1.5rem; align-items:baseline; padding-block:1.5rem; border-block:1px solid var(--line); }
-    .project h3,.project p { margin:0; }
-    .project p,.publication p,footer { color:var(--muted); }
-    .publication { max-width:55rem; padding-block:1.25rem; border-block-start:1px solid var(--line); }
-    .publication:last-child { border-block-end:1px solid var(--line); }
-    .publication h3,.publication p { margin:0; }
-    footer { padding-block:2rem; font-size:.85rem; }
-    @media (max-width:42rem) {
-      nav { align-items:flex-start; padding-block:1.25rem; }
-      nav ul,footer { flex-direction:column; }
-      nav ul { gap:.25rem; text-align:right; }
-      .hero,.project { grid-template-columns:1fr; }
-      .avatar { grid-row:1; width:7rem; }
-      .project { gap:.35rem; }
-      footer { align-items:flex-start; }
+  <meta name="description" content="Zurab Khadikov is a senior software architect and engineering leader working across industrial IoT, cloud-native platforms, agentic AI, and high-performance analytical systems.">
+  <link rel="canonical" href="https://zkhadikov.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://zkhadikov.github.io/">
+  <meta property="og:title" content="Zurab Khadikov — Principal Architecture, Industrial AI &amp; GPU OLAP">
+  <meta property="og:description" content="Senior software architect and engineering leader working across industrial IoT, agentic AI, cloud platforms, and high-performance analytical systems.">
+  <meta property="og:image" content="https://zkhadikov.github.io/assets/zurab-khadikov-social.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Zurab Khadikov — software architecture, industrial AI, and GPU OLAP">
+  <meta property="profile:first_name" content="Zurab">
+  <meta property="profile:last_name" content="Khadikov">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zurab Khadikov — Software Architecture &amp; Industrial AI">
+  <meta name="twitter:description" content="Principal architecture, engineering leadership, agentic AI, IIoT, and the GPU OLAP accelerator story.">
+  <meta name="twitter:image" content="https://zkhadikov.github.io/assets/zurab-khadikov-social.jpg">
+  <title>Zurab Khadikov — Principal Architecture, Industrial AI &amp; GPU OLAP</title>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://zkhadikov.github.io/#person",
+      "name": "Zurab Khadikov",
+      "url": "https://zkhadikov.github.io/",
+      "image": "https://zkhadikov.github.io/assets/zurab-khadikov.webp",
+      "jobTitle": [
+        "Senior Software Architect",
+        "Principal Software Architect",
+        "Industrial AI Architect",
+        "Agentic AI Architect"
+      ],
+      "workLocation": {
+        "@type": "Place",
+        "name": "Freiburg region, Germany"
+      },
+      "sameAs": [
+        "https://github.com/zkhadikov",
+        "https://www.linkedin.com/in/zkhadikov/",
+        "https://www.xing.com/profile/Zurab_Khadikov"
+      ],
+      "knowsAbout": [
+        "Software Architecture",
+        "Platform Architecture",
+        "Integration Architecture",
+        "Industrial IoT",
+        "Agentic AI",
+        "LLM Applications",
+        "RAG",
+        "Cloud-Native Systems",
+        "AWS",
+        "Security",
+        "Reliability",
+        "Observability",
+        "Technical Leadership",
+        "OLAP",
+        "GPU Computing",
+        "CUDA"
+      ],
+      "hasOccupation": [
+        {"@id": "https://zkhadikov.github.io/#principal-architect"},
+        {"@id": "https://zkhadikov.github.io/#engineering-leadership"},
+        {"@id": "https://zkhadikov.github.io/#industrial-ai-architect"}
+      ],
+      "hasCredential": [
+        {"@id": "https://zkhadikov.github.io/#computer-science-degree"},
+        {"@id": "https://zkhadikov.github.io/#metrology-degree"}
+      ]
+    },
+    {
+      "@type": "Occupation",
+      "@id": "https://zkhadikov.github.io/#principal-architect",
+      "name": "Principal Software Architect",
+      "description": "Platform, integration, cloud-native, and non-functional architecture."
+    },
+    {
+      "@type": "Occupation",
+      "@id": "https://zkhadikov.github.io/#engineering-leadership",
+      "name": "Engineering Leadership",
+      "description": "Technical direction, mentoring, reviews, delivery practices, and investment decisions."
+    },
+    {
+      "@type": "Occupation",
+      "@id": "https://zkhadikov.github.io/#industrial-ai-architect",
+      "name": "Industrial AI Architect",
+      "description": "Agentic AI Architect working on agentic AI, LLM applications, RAG, governance, automation, and industrial context."
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "@id": "https://zkhadikov.github.io/#computer-science-degree",
+      "name": "Bachelor in Computer Science / Computational Science",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Freiburg"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "@id": "https://zkhadikov.github.io/#metrology-degree",
+      "name": "Bachelor in Metrology, Standardization and Quality Management",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "Georgian Technical University"
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://zkhadikov.github.io/#dolap-publication",
+      "name": "Exploring Graphics Processing Units as Parallel Coprocessors for Online Aggregation",
+      "datePublished": "2010",
+      "sameAs": "https://doi.org/10.1145/1871940.1871958",
+      "author": [
+        {"@type": "Person", "name": "Tobias Lauer"},
+        {"@type": "Person", "name": "Amitava Datta"},
+        {"@id": "https://zkhadikov.github.io/#person"},
+        {"@type": "Person", "name": "Christoffer Anselm"}
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://zkhadikov.github.io/#measurement-patent",
+      "name": "Method for Improving the Measuring Performance of Automation Field Devices",
+      "identifier": "US 11,644,827 B2",
+      "datePublished": "2023",
+      "sameAs": "https://patents.google.com/patent/US11644827B2/en",
+      "contributor": [
+        {"@type": "Person", "name": "Manfred Niederer"},
+        {"@type": "Person", "name": "Stefan Robl"},
+        {"@type": "Person", "name": "Ervin Binkert"},
+        {"@type": "Person", "name": "Alexey Malinovskiy"},
+        {"@type": "Person", "name": "Heiko Oehme"},
+        {"@id": "https://zkhadikov.github.io/#person"},
+        {"@type": "Person", "name": "Ulrich Kaiser"}
+      ]
     }
-    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  ]
+}
+  </script>
+  <style>
+    :root {
+      --color-bg: #07120c;
+      --color-panel: #0b1b12;
+      --color-text: #eaffef;
+      --color-muted: #9ab4a2;
+      --color-accent: #65f59b;
+      --color-line: #294735;
+      --color-panel-soft: rgba(11, 27, 18, 0.78);
+      --color-grid: rgba(41, 71, 53, 0.18);
+      --shadow-panel: 0 1.5rem 4rem rgba(0, 0, 0, 0.28);
+      --page-width: 74rem;
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--color-bg);
+      color-scheme: dark;
+    }
+
+    body {
+      margin: 0;
+      min-width: 20rem;
+      background-color: var(--color-bg);
+      background-image:
+        radial-gradient(circle at top right, rgba(101, 245, 155, 0.12), transparent 32%),
+        linear-gradient(180deg, rgba(11, 27, 18, 0.96), rgba(7, 18, 12, 1)),
+        linear-gradient(var(--color-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+      background-size:
+        auto,
+        auto,
+        2.75rem 2.75rem,
+        2.75rem 2.75rem;
+      color: var(--color-text);
+      font: 1rem/1.7 var(--font-sans);
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--color-text);
+      text-decoration-color: rgba(101, 245, 155, 0.9);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.2em;
+      transition:
+        color 180ms ease,
+        text-decoration-color 180ms ease,
+        border-color 180ms ease,
+        background-color 180ms ease;
+    }
+
+    a:hover {
+      color: var(--color-accent);
+      text-decoration-color: var(--color-accent);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .page {
+      width: min(100% - 1.25rem, var(--page-width));
+      margin-inline: auto;
+      padding-bottom: 3rem;
+    }
+
+    main {
+      display: grid;
+      gap: 1.5rem;
+      padding-block: 1.5rem clamp(3rem, 7vw, 5rem);
+    }
+
+    .site-nav {
+      position: sticky;
+      top: 0.75rem;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 1rem 2rem;
+      margin-top: 0.75rem;
+      padding: 1rem 1.25rem;
+      border: 1px solid rgba(101, 245, 155, 0.16);
+      border-radius: 999px;
+      background:
+        linear-gradient(180deg, rgba(14, 31, 21, 0.96), rgba(9, 19, 14, 0.92));
+      box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.18);
+      backdrop-filter: blur(18px);
+    }
+
+    .brand {
+      color: var(--color-accent);
+      font: 700 1rem/1.2 var(--font-mono);
+      letter-spacing: 0.08em;
+      text-decoration: none;
+    }
+
+    .site-nav ul {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: max-content;
+      justify-content: end;
+      gap: 0.65rem 1rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .site-nav a:not(.brand) {
+      color: var(--color-muted);
+      font: 600 0.82rem/1.4 var(--font-mono);
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .site-nav a[aria-current="location"] {
+      color: var(--color-accent);
+    }
+
+    section {
+      position: relative;
+      margin: 0;
+    }
+
+    section[id],
+    main#top {
+      scroll-margin-top: 5rem;
+    }
+
+    section:not(.hero) {
+      padding: clamp(1.4rem, 3vw, 2rem);
+      border: 1px solid var(--color-line);
+      border-radius: 1.5rem;
+      background:
+        linear-gradient(180deg, rgba(11, 27, 18, 0.92), rgba(8, 18, 13, 0.9));
+      box-shadow: var(--shadow-panel);
+    }
+
+    .eyebrow,
+    .section-label,
+    .card-label,
+    .metric-label,
+    .hero-name,
+    .timeline-date,
+    .contact-lead,
+    footer {
+      color: var(--color-accent);
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      line-height: 1.5;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow,
+    .section-label,
+    .hero-name,
+    .metric-label,
+    .contact-lead {
+      margin: 0;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.9fr);
+      gap: clamp(1.25rem, 3vw, 2rem);
+      align-items: stretch;
+    }
+
+    .hero-copy,
+    .hero-visual,
+    .proof-grid article,
+    .role-grid article,
+    .case-study-grid article,
+    .current-grid article,
+    .evidence-grid article,
+    .timeline-panel,
+    .contact-panel {
+      display: grid;
+      gap: 0.85rem;
+      border: 1px solid var(--color-line);
+      border-radius: 1.25rem;
+      background:
+        linear-gradient(180deg, rgba(14, 34, 23, 0.96), rgba(10, 22, 16, 0.94));
+      box-shadow: var(--shadow-panel);
+    }
+
+    .hero-copy {
+      padding: clamp(1.5rem, 3vw, 2.5rem);
+      align-content: center;
+    }
+
+    .hero-visual {
+      min-height: clamp(22rem, 55vw, 34rem);
+      padding: clamp(0.5rem, 1vw, 0.8rem);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      margin-block: 0;
+    }
+
+    h1 {
+      max-width: 12ch;
+      margin-bottom: 1rem;
+      font-size: clamp(3rem, 8vw, 5.4rem);
+      line-height: 0.94;
+      letter-spacing: -0.06em;
+      text-wrap: balance;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4.5vw, 3.1rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      text-wrap: balance;
+    }
+
+    h3 {
+      font-size: clamp(1.12rem, 1.6vw, 1.35rem);
+      line-height: 1.24;
+      text-wrap: balance;
+    }
+
+    h4 {
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    p,
+    li {
+      color: var(--color-muted);
+    }
+
+    .hero-role {
+      margin-bottom: 1rem;
+      color: var(--color-text);
+      font-size: clamp(1.08rem, 2vw, 1.28rem);
+      font-weight: 600;
+    }
+
+    .hero-summary,
+    .section-intro {
+      max-width: 44rem;
+      font-size: clamp(1.05rem, 1.8vw, 1.18rem);
+    }
+
+    .hero-summary {
+      max-width: 36rem;
+    }
+
+    .hero-portrait {
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+      object-position: center 18%;
+      background: #133321;
+    }
+
+    .section-head {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-head h2 {
+      max-width: 16ch;
+    }
+
+    .filters {
+      display: none;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .enhanced .filters {
+      display: flex;
+    }
+
+    .filters button {
+      padding: 0.65rem 0.9rem;
+      border: 1px solid var(--color-line);
+      border-radius: 999px;
+      background: rgba(101, 245, 155, 0.05);
+      color: var(--color-text);
+      font: 600 0.82rem/1.4 var(--font-mono);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .filters button[aria-pressed="true"] {
+      color: var(--color-bg);
+      background: var(--color-accent);
+    }
+
+    .proof-grid,
+    .role-grid,
+    .case-study-grid,
+    .work-grid,
+    .evidence-grid,
+    .contact-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .proof-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .role-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .case-study-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.45fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .case-study-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .work-grid,
+    .evidence-grid {
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    }
+
+    .proof-grid article,
+    .role-grid article,
+    .case-study-grid article,
+    .current-grid article,
+    .evidence-grid article,
+    .timeline-panel,
+    .contact-panel {
+      padding: 1.2rem;
+    }
+
+    .metric {
+      color: var(--color-text);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      font-family: var(--font-mono);
+    }
+
+    .metric-context {
+      margin: 0;
+    }
+
+    .competency-list,
+    .evidence-list,
+    .contact-list {
+      margin: 0;
+    }
+
+    .competency-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+      gap: 0.75rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .competency-list li {
+      padding: 0.75rem 0.9rem;
+      border: 1px solid var(--color-line);
+      border-radius: 999px;
+      background: rgba(101, 245, 155, 0.05);
+      color: var(--color-text);
+      font-size: 0.95rem;
+    }
+
+    .evidence-list,
+    .contact-list {
+      padding-left: 1.1rem;
+      gap: 0.5rem;
+    }
+
+    .evidence-list a,
+    .contact-list a,
+    .metric-context,
+    .timeline-body {
+      overflow-wrap: anywhere;
+    }
+
+    .timeline-panel h3,
+    .timeline-panel p {
+      margin: 0;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline li {
+      position: relative;
+      padding-left: 1.15rem;
+      border-left: 1px solid var(--color-line);
+    }
+
+    .timeline li::before {
+      content: "";
+      position: absolute;
+      top: 0.48rem;
+      left: -0.375rem;
+      width: 0.7rem;
+      height: 0.7rem;
+      border: 2px solid var(--color-accent);
+      border-radius: 50%;
+      background: var(--color-panel);
+      box-shadow: 0 0 0 0.28rem rgba(101, 245, 155, 0.08);
+    }
+
+    .timeline-date {
+      margin-bottom: 0.2rem;
+    }
+
+    .timeline-title {
+      color: var(--color-text);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .subsection {
+      margin-top: 1.5rem;
+    }
+
+    .subsection h3 {
+      margin-bottom: 0.95rem;
+    }
+
+    .evidence-details {
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--color-line);
+      border-radius: 1rem;
+      background: rgba(101, 245, 155, 0.04);
+    }
+
+    .evidence-details summary {
+      color: var(--color-text);
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .evidence-details[open] summary {
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-panel {
+      gap: 1rem;
+      padding: clamp(1.2rem, 3vw, 1.6rem);
+      background:
+        linear-gradient(135deg, rgba(101, 245, 155, 0.08), rgba(11, 27, 18, 0.96) 36%),
+        linear-gradient(180deg, rgba(14, 34, 23, 0.96), rgba(10, 22, 16, 0.94));
+    }
+
+    .contact-list {
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+      padding: 0;
+      list-style: none;
+    }
+
+    .contact-list li {
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(101, 245, 155, 0.18);
+      border-radius: 1rem;
+      background: rgba(101, 245, 155, 0.04);
+    }
+
+    time {
+      font-family: var(--font-mono);
+      color: var(--color-text);
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem 2rem;
+      align-items: start;
+      margin-top: 2.5rem;
+      padding-block: 1.75rem 0;
+      border-top: 1px solid var(--color-line);
+      color: var(--color-muted);
+      font-size: 0.82rem;
+      line-height: 1.65;
+      text-transform: none;
+    }
+
+    :focus-visible {
+      outline: 0.2rem solid var(--color-accent);
+      outline-offset: 0.25rem;
+    }
+
+    .motion-ok .reveal {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: opacity 500ms ease, transform 500ms ease;
+    }
+
+    .motion-ok .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 48rem) {
+      .site-nav {
+        grid-template-columns: minmax(0, 1fr);
+        border-radius: 1.25rem;
+      }
+
+      .site-nav ul {
+        justify-content: start;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .hero,
+      .case-study-grid,
+      .work-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .proof-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .role-grid,
+      .case-study-layout,
+      footer {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-visual {
+        min-height: 20rem;
+      }
+    }
+
+    @media (max-width: 30rem) {
+      .site-nav,
+      .site-nav ul,
+      .proof-grid {
+        align-items: flex-start;
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .site-nav ul {
+        gap: 0.75rem;
+      }
+
+      .proof-grid,
+      .role-grid,
+      .case-study-grid,
+      .evidence-grid,
+      .contact-list {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .page {
+        width: min(100% - 0.9rem, var(--page-width));
+      }
+
+      section:not(.hero),
+      .hero-copy,
+      .hero-visual {
+        border-radius: 1.2rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="page">
-    <nav aria-label="Primary navigation">
-      <a href="#top" aria-label="Zurab Khadikov, home">ZK/</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Zurab Khadikov, home">ZK://</a>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="https://github.com/zkhadikov">GitHub</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#recruiter-profile">Profile</a></li>
+        <li><a href="#gpu-story">GPU story</a></li>
+        <li><a href="#current-work">Current work</a></li>
+        <li><a href="#evidence">Evidence</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <main id="top">
-      <div class="hero">
-        <div>
-          <div class="eyebrow">Freiburg, Germany</div>
-          <h1>Zurab Khadikov</h1>
-          <p class="intro">Senior Software Architect with more than 15 years of experience turning industrial, cloud, and business-intelligence challenges into dependable software platforms.</p>
-          <div class="links">
-            <a href="https://www.linkedin.com/in/zkhadikov/">LinkedIn</a>
-            <a href="https://www.xing.com/profile/Zurab_Khadikov">XING</a>
-            <a href="https://github.com/zkhadikov">GitHub</a>
-            <a href="https://netilion.endress.com">Explore Netilion</a>
+
+    <main>
+      <section id="top" class="hero" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow">Senior software architect · industrial systems · AI</p>
+          <p class="hero-name">Zurab Khadikov</p>
+          <h1 id="hero-heading">Turning ambitious ideas into systems that perform.</h1>
+          <p class="hero-role">Senior Software Architect and engineering leader in the Freiburg region, Germany.</p>
+          <p class="hero-summary">
+            I design dependable platforms where research, cloud architecture,
+            industrial context, and engineering leadership meet—from a CUDA-powered
+            OLAP accelerator to today’s agentic AI and IIoT systems.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <img
+            class="hero-portrait"
+            src="assets/zurab-khadikov.webp"
+            alt="Portrait of Zurab Khadikov"
+            width="1600"
+            height="1067"
+            loading="eager"
+            fetchpriority="high">
+        </div>
+      </section>
+
+      <section id="impact" aria-labelledby="impact-heading">
+        <div class="section-head">
+          <p class="section-label">Selected proof points</p>
+          <h2 id="impact-heading">Public evidence across product, research, and delivery.</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <p class="metric-label">Commercial GPU guidance</p>
+            <p class="metric">5–10× typical</p>
+            <p class="metric-context">Current official Jedox documentation and FAQ describe the NVIDIA Tesla GPU integration, average 5–10× speedups, best cases around 70×, and workload-dependent limits.</p>
+          </article>
+          <article>
+            <p class="metric-label">Published GPU / OLAP trail</p>
+            <p class="metric">3 GPU/OLAP items</p>
+            <p class="metric-context">Publications and presentations spanning ACM DOLAP, NVIDIA GTC, and later conference work on analytical planning performance.</p>
+          </article>
+          <article>
+            <p class="metric-label">Granted IP</p>
+            <p class="metric">1 granted patent</p>
+            <p class="metric-context">US 11,644,827 B2 on improving the measuring performance of automation field devices.</p>
+          </article>
+          <article>
+            <p class="metric-label">Formal grounding</p>
+            <p class="metric">2 bachelor degrees</p>
+            <p class="metric-context">Computer Science / Computational Science and Metrology, Standardization and Quality Management.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="recruiter-profile" aria-labelledby="recruiter-heading">
+        <div class="section-head">
+          <p class="section-label">Profile for recruiters and hiring systems</p>
+          <h2 id="recruiter-heading">Architecture depth, product delivery, and technical leadership.</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter expertise and work">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="architecture" aria-pressed="false">Architecture</button>
+          <button type="button" data-filter="ai" aria-pressed="false">AI engineering</button>
+          <button type="button" data-filter="leadership" aria-pressed="false">Leadership</button>
+          <button type="button" data-filter="hpc" aria-pressed="false">GPU &amp; OLAP</button>
+        </div>
+        <div class="role-grid" aria-label="Target roles">
+          <article class="filter-card reveal" data-tags="hpc architecture">
+            <h3>Principal Software Architect</h3>
+            <p>Platform, integration, cloud-native, and non-functional architecture.</p>
+          </article>
+          <article class="filter-card reveal" data-tags="architecture leadership">
+            <h3>Engineering Leadership</h3>
+            <p>Technical direction, mentoring, reviews, delivery practices, and investment decisions.</p>
+          </article>
+          <article class="filter-card reveal" data-tags="architecture ai">
+            <h3>Industrial AI Architect</h3>
+            <p>Agentic AI Architect working on agentic AI, LLM applications, RAG, governance, automation, and industrial context.</p>
+          </article>
+        </div>
+        <h3>Core competencies</h3>
+        <ul class="competency-list">
+          <li>Software Architecture</li>
+          <li>Platform Architecture</li>
+          <li>Integration Architecture</li>
+          <li>Industrial IoT</li>
+          <li>Agentic AI</li>
+          <li>LLM Applications</li>
+          <li>RAG</li>
+          <li>Cloud-Native Systems</li>
+          <li>AWS</li>
+          <li>Security</li>
+          <li>Reliability</li>
+          <li>Observability</li>
+          <li>Technical Leadership</li>
+          <li>OLAP</li>
+          <li>GPU Computing</li>
+          <li>CUDA</li>
+        </ul>
+        <p><strong>15+ years</strong> building software products and platforms in the Freiburg region, Germany.</p>
+      </section>
+
+      <section id="gpu-story" aria-labelledby="gpu-heading">
+        <div class="section-head">
+          <p class="section-label">Signature case study</p>
+          <h2 id="gpu-heading">From bachelor prototype to the commercial Jedox GPU Accelerator.</h2>
+          <p class="section-intro">
+            This story shows how an interactive OLAP performance problem moved from bachelor work into product engineering, public research, and durable product documentation.
+          </p>
+        </div>
+        <div class="case-study-layout">
+          <article class="timeline-panel filter-card reveal" data-tags="architecture hpc">
+            <p class="card-label">Timeline</p>
+            <h3>How the GPU case study progressed</h3>
+            <ol class="timeline">
+              <li>
+                <p class="timeline-date"><time datetime="2008">2008</time>–<time datetime="2009">2009</time></p>
+                <p class="timeline-title">Bachelor prototype</p>
+                <p class="timeline-body">A sparse cube representation and CUDA aggregation pipeline cut a 1,176-query view from 30 seconds to 6.2 seconds—approximately 4.8× faster.</p>
+              </li>
+              <li>
+                <p class="timeline-date"><time datetime="2009">2009</time></p>
+                <p class="timeline-title">Public validation</p>
+                <p class="timeline-body">CeBIT and NVIDIA GTC shared results up to 18× faster for individual queries and over 4× for full views with more than 1,100 queries.</p>
+              </li>
+              <li>
+                <p class="timeline-date"><time datetime="2009">2009</time>–<time datetime="2012">2012</time></p>
+                <p class="timeline-title">Product engineering</p>
+                <p class="timeline-body">The commercial Jedox GPU Accelerator moved into OLAP server engineering with C/C++, CUDA, multi-GPU scaling, and NVIDIA Tesla support.</p>
+              </li>
+              <li>
+                <p class="timeline-date">Current documentation</p>
+                <p class="timeline-title">Evidence that stayed public</p>
+                <p class="timeline-body">Current documentation reports typical 5–10× speedups, best cases around 70×, and workload-dependent limitations.</p>
+              </li>
+            </ol>
+          </article>
+          <div class="case-study-grid">
+            <article class="story-card filter-card reveal" data-tags="architecture hpc">
+              <p class="card-label">Problem</p>
+              <h3>Interactive OLAP workloads needed decision-speed responses.</h3>
+              <p>Interactive OLAP aggregation and planning workloads combine sparse multidimensional data, repeated consolidations, and rule evaluation. The goal was to keep demanding finance and planning views responsive instead of turning every recalculation into a long wait.</p>
+            </article>
+            <article class="story-card filter-card reveal" data-tags="architecture hpc">
+              <p class="card-label">Insight</p>
+              <h3>Parallel aggregation turned thesis work into public proof.</h3>
+              <p>During <time datetime="2008">2008</time>–<time datetime="2009">2009</time>, the bachelor prototype used a sparse cube representation and CUDA-based aggregation pipeline for a 1,176-query view. Palo needed 30 seconds, while the prototype completed in 6.2 seconds—approximately 4.8× faster.</p>
+              <p>Public validation followed in <time datetime="2009">2009</time> at CeBIT and NVIDIA GTC. Individual queries were reported at up to 18× faster, and full views with more than 1,100 queries ran at over 4×, moving the work beyond a lab-only result.</p>
+              <ul class="evidence-list">
+                <li><a href="https://www.nvidia.com/content/GTC/posters/75_Lauer_Palo_Plus_GPU.pdf">Palo+GPU: A CUDA-powered In-memory OLAP Server</a> — NVIDIA GTC poster.</li>
+                <li><a href="https://doi.org/10.1145/1871940.1871958">Exploring Graphics Processing Units as Parallel Coprocessors for Online Aggregation</a> — ACM DOLAP publication.</li>
+              </ul>
+            </article>
+            <article class="story-card filter-card reveal" data-tags="architecture hpc leadership">
+              <p class="card-label">Engineering</p>
+              <h3>Commercialization required durable systems engineering.</h3>
+              <p>Across <time datetime="2009">2009</time>–<time datetime="2012">2012</time>, the work became product engineering: C/C++, CUDA, sparse cube representation, massively parallel aggregation, multi-GPU scaling, and integration into the Jedox OLAP server. The public <a href="https://knowledgebase-onprem.jedox.com/on-prem/gpu-accelerator.htm">Jedox GPU Accelerator documentation</a> describes the resulting product as an OLAP Server feature that uses NVIDIA Tesla GPUs, supports per-cube activation, and applies dynamic engine selection based on workload fit.</p>
+              <p>My public <a href="https://github.com/zkhadikov/palo-server">Palo server fork</a> and <a href="https://github.com/zkhadikov/palo">Palo deployment repository</a> relate to open-source server and operations work. They do not contain the proprietary accelerator implementation.</p>
+            </article>
+            <article class="story-card filter-card reveal" data-tags="architecture hpc">
+              <p class="card-label">Outcome</p>
+              <h3>Public evidence keeps the benchmark story grounded.</h3>
+              <p>Current official documentation and FAQ show that the commercial Jedox GPU Accelerator was a real product rather than only a research prototype. The public materials describe NVIDIA Tesla GPU support inside Jedox OLAP workflows and explain how workload shape determines whether GPU acceleration is a good fit. The <a href="https://knowledgebase-onprem.jedox.com/on-prem/gpu-accelerator-faq.htm">Jedox GPU Accelerator FAQ</a> is the right public source for that current documentation guidance.</p>
+              <p>Separate research work reported up to 50× faster aggregation and over 150× faster writeback in selected workloads. Those research figures should not be merged with current product documentation guidance.</p>
+              <details class="evidence-details">
+                <summary>How the benchmark figures differ</summary>
+                <p>
+                  Prototype, research, historical commercial claims, and current
+                  product guidance describe different workloads and generations. They
+                  should not be interpreted as one universal speedup.
+                </p>
+              </details>
+              <details class="evidence-details">
+                <summary>How to read the public source trail</summary>
+                <p>
+                  The public Palo repositories document related open-source server and
+                  deployment work. They support the broader product context, but they
+                  remain separate from the proprietary Jedox GPU Accelerator implementation.
+                </p>
+              </details>
+            </article>
           </div>
         </div>
-        <img class="avatar" src="https://avatars.githubusercontent.com/u/34274170?v=4" alt="Portrait of Zurab Khadikov" width="240" height="240">
-      </div>
-      <section id="about" aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
-        <div class="about">
-          <p>I design and evolve software architectures for Industrial Internet of Things products at Endress+Hauser Digital Solutions. My work combines technical direction with hands-on delivery across REST APIs, web applications, serverless AWS services, and customer-specific industrial solutions.</p>
-          <p>I care about more than code: mentoring engineers, clarifying architectural decisions, improving development practices, and helping teams deliver sustainable systems. Before focusing on IIoT, I led the development of Jedox Office integrations, established build and release automation, and worked on high-performance analytical database technology.</p>
-          <p>My background spans Ruby on Rails, JavaScript and TypeScript, Angular, React, Java, C#/.NET, C++, AWS, Docker, Jenkins, and Git-based delivery workflows. I hold degrees in Computer Science/Computational Science and Metrology and Quality Management, connecting software engineering with an understanding of industrial systems and processes.</p>
+      </section>
+
+      <section id="current-work" aria-labelledby="current-work-heading">
+        <div class="section-head">
+          <p class="section-label">Current work</p>
+          <h2 id="current-work-heading">Industrial platforms, agentic AI, and dependable delivery.</h2>
+        </div>
+        <div class="work-grid current-grid">
+          <article class="filter-card reveal" data-tags="architecture leadership">
+            <h3>Netilion and Netilion Hybrid</h3>
+            <p>I work on architecture and delivery for Netilion and Netilion Hybrid, focusing on industrial IoT products, cloud-native services, integration boundaries, and dependable platform evolution.</p>
+          </article>
+          <article class="filter-card reveal" data-tags="architecture ai">
+            <h3>Agentic AI and LLM/RAG systems</h3>
+            <p>My current scope includes agentic AI, LLM applications, and RAG systems with attention to governance, automation, evaluation, and industrial context.</p>
+          </article>
+          <article class="filter-card reveal" data-tags="architecture leadership">
+            <h3>Governance, reliability, and mentoring</h3>
+            <p>I also invest in security, reliability, observability, architecture reviews, and mentoring so teams can move faster without sacrificing operational discipline.</p>
+          </article>
+        </div>
+        <div class="subsection">
+          <h3>Leadership and delivery foundations</h3>
+          <div class="work-grid current-grid">
+            <article class="filter-card reveal" data-tags="architecture leadership">
+              <h4>Jedox Office integrations</h4>
+              <p>I previously led work across Jedox Excel and Office integrations, combining product delivery, technical direction, and cross-team coordination.</p>
+            </article>
+            <article class="filter-card reveal" data-tags="architecture leadership">
+              <h4>Build and release systems</h4>
+              <p>I established build, packaging, and release systems with Jenkins, CMake, Docker, and reproducible delivery practices that made shipping more predictable.</p>
+            </article>
+          </div>
         </div>
       </section>
-      <section id="work" aria-labelledby="work-heading">
-        <h2 id="work-heading">Selected work</h2>
-        <article class="project">
-          <h3><a href="https://netilion.endress.com">Netilion</a></h3>
-          <p>Architecture and development of Endress+Hauser's Industrial IoT ecosystem, including REST APIs, web products, serverless cloud services, and tailored customer solutions.</p>
-          <span>IIoT / AWS</span>
-        </article>
-        <article class="project">
-          <h3>Palo / Jedox OLAP</h3>
-          <p>Work on the open-source MOLAP server behind Palo/Jedox, including the integration of a massively parallel GPU accelerator for OLAP calculations. GitHub hosts a <a href="https://github.com/zkhadikov/palo-server">fork of the Palo server</a> and separate <a href="https://github.com/zkhadikov/palo">Dockerfiles for building and deploying it</a>.</p>
-          <span>C++ / CUDA</span>
-        </article>
-        <article class="project">
-          <h3>Engineering leadership</h3>
-          <p>Technical leadership, mentoring, architecture, code review, and delivery-process improvement across IIoT teams and the Jedox Excel and Office Add-ins team.</p>
-          <span>Teams / Architecture</span>
-        </article>
-        <article class="project">
-          <h3>Build and release systems</h3>
-          <p>Designed continuous-integration infrastructure and standardized automated build, packaging, and release workflows using Jenkins, CMake, Docker, and LXC.</p>
-          <span>CI/CD / DevOps</span>
-        </article>
+
+      <section id="evidence" aria-labelledby="evidence-heading">
+        <div class="section-head">
+          <p class="section-label">Evidence</p>
+          <h2 id="evidence-heading">Publications, patent, GitHub, and education.</h2>
+        </div>
+        <div class="evidence-grid">
+          <article class="reveal">
+            <h3>Publication</h3>
+            <ul class="evidence-list">
+              <li><a href="https://doi.org/10.1145/1871940.1871958">Exploring Graphics Processing Units as Parallel Coprocessors for Online Aggregation</a> — ACM DOLAP <time datetime="2010">2010</time>.</li>
+            </ul>
+          </article>
+          <article class="reveal">
+            <h3>Presentations</h3>
+            <ul class="evidence-list">
+              <li><a href="https://www.nvidia.com/content/GTC/posters/75_Lauer_Palo_Plus_GPU.pdf">Palo+GPU: A CUDA-powered In-memory OLAP Server</a> — NVIDIA GTC poster, <time datetime="2009">2009</time>.</li>
+              <li>Efficient Top-down Planning in Business Intelligence — conference presentation, <time datetime="2012">2012</time>.</li>
+            </ul>
+          </article>
+          <article class="reveal">
+            <h3>Commercial sources</h3>
+            <ul class="evidence-list">
+              <li><a href="https://knowledgebase-onprem.jedox.com/on-prem/gpu-accelerator.htm">Jedox GPU Accelerator documentation</a></li>
+              <li><a href="https://knowledgebase-onprem.jedox.com/on-prem/gpu-accelerator-faq.htm">Jedox GPU Accelerator FAQ</a></li>
+              <li><a href="https://www.jedox.com/en/about/company/">Jedox company history</a></li>
+            </ul>
+          </article>
+          <article class="reveal">
+            <h3>Patent</h3>
+            <ul class="evidence-list">
+              <li><a href="https://patents.google.com/patent/US11644827B2/en">Method for Improving the Measuring Performance of Automation Field Devices</a> — granted in <time datetime="2023">2023</time>.</li>
+            </ul>
+          </article>
+          <article class="reveal">
+            <h3>GitHub</h3>
+            <ul class="evidence-list">
+              <li><a href="https://github.com/zkhadikov">GitHub profile</a></li>
+              <li><a href="https://github.com/zkhadikov/palo-server">Public Palo server fork</a> — open-source server work, separate from the proprietary accelerator.</li>
+              <li><a href="https://github.com/zkhadikov/palo">Public Palo deployment repository</a> — open-source deployment materials.</li>
+            </ul>
+          </article>
+          <article class="reveal">
+            <h3>Education</h3>
+            <ul class="evidence-list">
+              <li>Bachelor in Computer Science / Computational Science, University of Freiburg.</li>
+              <li>Bachelor in Metrology, Standardization and Quality Management, Georgian Technical University.</li>
+            </ul>
+          </article>
+        </div>
       </section>
-      <section id="publications" aria-labelledby="publications-heading">
-        <h2 id="publications-heading">Research, publications &amp; patents</h2>
-        <article class="publication">
-          <h3><a href="https://doi.org/10.1145/1871940.1871958">Exploring Graphics Processing Units as Parallel Coprocessors for Online Aggregation</a></h3>
-          <p>Co-authored with Tobias Lauer, Amitava Datta, and Christoffer Anselm. ACM DOLAP 2010, pages 77-84.</p>
-        </article>
-        <article class="publication">
-          <h3><a href="https://www.nvidia.com/content/GTC/posters/75_Lauer_Palo_Plus_GPU.pdf">Palo+GPU: A CUDA-powered In-memory OLAP Server</a></h3>
-          <p>Co-authored with Tobias Lauer and Amitava Datta. NVIDIA GPU Technology Conference poster, 2009.</p>
-        </article>
-        <article class="publication">
-          <h3>Efficient Top-down Planning in Business Intelligence</h3>
-          <p>GPU Technology Conference presentation, 2012. No stable public archive is currently available.</p>
-        </article>
-        <article class="publication">
-          <h3><a href="https://patents.google.com/patent/US11644827B2/en">Method for Improving the Measuring Performance of Automation Field Devices</a></h3>
-          <p>Co-inventor on the Endress+Hauser patent for adapting field-device measuring algorithms from calibration and environmental data. Granted as US 11,644,827 B2 in 2023.</p>
-        </article>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <div class="section-head">
+          <p class="section-label">Contact</p>
+          <h2 id="contact-heading">Public profiles and product context.</h2>
+        </div>
+        <div class="contact-panel reveal">
+          <p class="contact-lead">Public links only</p>
+          <p>Reachable through public profiles, open-source references, and product context without exposing private contact details.</p>
+          <ul class="contact-list">
+            <li><a href="https://www.linkedin.com/in/zkhadikov/">LinkedIn</a></li>
+            <li><a href="https://github.com/zkhadikov">GitHub</a></li>
+            <li><a href="https://www.xing.com/profile/Zurab_Khadikov">XING</a></li>
+            <li><a href="https://netilion.endress.com">Netilion</a></li>
+          </ul>
+        </div>
       </section>
     </main>
+
     <footer>
-      <span>&copy; 2026 Zurab Khadikov</span>
-      <span>Built with HTML and CSS. Hosted on GitHub Pages.</span>
+      <span>Zurab Khadikov — principal architecture, industrial AI, and GPU OLAP.</span>
+      <span>Static HTML with public evidence only; no private contact details published.</span>
     </footer>
   </div>
+  <script>
+    (() => {
+      const root = document.documentElement;
+
+      const reducedMotion = window.matchMedia
+        ? window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        : false;
+
+      const navigationLinks = new Map(
+        [...document.querySelectorAll('.site-nav a[href^="#"]')]
+          .map((link) => [link.getAttribute("href").slice(1), link])
+      );
+
+      if ("IntersectionObserver" in window) {
+        const intersectionState = new Map();
+        const sectionObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            intersectionState.set(entry.target, {
+              isIntersecting: entry.isIntersecting,
+              intersectionRatio: entry.intersectionRatio
+            });
+          });
+
+          const active = [...intersectionState.entries()]
+            .filter(([, state]) => state.isIntersecting)
+            .sort((left, right) => (
+              right[1].intersectionRatio - left[1].intersectionRatio
+            ))[0]?.[0];
+
+          navigationLinks.forEach((link, id) => {
+            if (active && id === active.id) {
+              link.setAttribute("aria-current", "location");
+            } else {
+              link.removeAttribute("aria-current");
+            }
+          });
+        }, { rootMargin: "-30% 0px -60%", threshold: [0.1, 0.5] });
+
+        document.querySelectorAll("main section[id]").forEach((section) => {
+          intersectionState.set(section, {
+            isIntersecting: false,
+            intersectionRatio: 0
+          });
+          sectionObserver.observe(section);
+        });
+      }
+
+      const filterButtons = [...document.querySelectorAll("[data-filter]")];
+      const filterCards = [...document.querySelectorAll("[data-tags]")];
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter;
+
+          filterButtons.forEach((candidate) => {
+            candidate.setAttribute(
+              "aria-pressed",
+              String(candidate === button)
+            );
+          });
+
+          filterCards.forEach((card) => {
+            const tags = card.dataset.tags.split(/\s+/);
+            card.hidden = filter !== "all" && !tags.includes(filter);
+          });
+        });
+      });
+
+      root.classList.add("enhanced");
+
+      if (!reducedMotion && "IntersectionObserver" in window) {
+        root.classList.add("motion-ok");
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll(".reveal").forEach((element) => {
+          revealObserver.observe(element);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
