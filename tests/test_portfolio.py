@@ -57,11 +57,33 @@ class PortfolioContractTests(unittest.TestCase):
                 "recruiter-profile",
                 "gpu-story",
                 "current-work",
+                "experience",
                 "evidence",
                 "contact",
             }
             <= self.document.ids
         )
+
+    def test_cv_download_is_linked_and_present(self):
+        cv_path = "assets/zurab-khadikov-lebenslauf.pdf"
+        self.assertIn(cv_path, self.document.links)
+        self.assertTrue((ROOT / cv_path).is_file())
+        self.assertIn(f'href="{cv_path}" download', self.source)
+
+    def test_published_cv_has_no_private_contact_details(self):
+        cv_bytes = (ROOT / "assets/zurab-khadikov-lebenslauf.pdf").read_bytes()
+        self.assertNotIn(b"mailto:", cv_bytes)
+        self.assertNotIn(b"tel:", cv_bytes)
+
+    def test_architecture_certification_is_listed(self):
+        for phrase in (
+            "certified professional for software architecture",
+            "foundation level",
+            "isaqb",
+            "2101-cpsafl-201863-de",
+        ):
+            with self.subTest(phrase=phrase):
+                self.assertIn(phrase, self.normalized_text)
 
     def test_recruiter_profile_is_explicit(self):
         required_phrases = (
@@ -174,7 +196,7 @@ class PortfolioContractTests(unittest.TestCase):
         self.assertEqual("https://zkhadikov.github.io/assets/zurab-khadikov.webp", person["image"])
         self.assertIn("Senior Software Architect", person["jobTitle"])
         self.assertNotIn("homeLocation", person)
-        self.assertEqual("Freiburg region, Germany", person["workLocation"]["name"])
+        self.assertEqual("Freiburg, Germany", person["workLocation"]["name"])
         self.assertIn(person["workLocation"]["name"], self.body_source)
         self.assertGreaterEqual(len(person["hasOccupation"]), 3)
         self.assertGreaterEqual(len(person["knowsAbout"]), 10)
