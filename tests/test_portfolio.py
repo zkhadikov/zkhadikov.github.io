@@ -85,6 +85,19 @@ class PortfolioContractTests(unittest.TestCase):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, self.normalized_text)
 
+    def test_advanced_trainings_are_listed(self):
+        for phrase in (
+            "architektur im kontext agentischer entwicklung",
+            "agenta",
+            "web security",
+            "websec",
+            "cpsa-a",
+            '<time datetime="2026-10">',
+            '<time datetime="2022-05">',
+        ):
+            with self.subTest(phrase=phrase):
+                self.assertIn(phrase, self.normalized_text)
+
     def test_recruiter_profile_is_explicit(self):
         required_phrases = (
             "principal software architect",
